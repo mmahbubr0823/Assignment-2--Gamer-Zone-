@@ -9,6 +9,14 @@ font-family: 'Work Sans', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Open+Sans&family=Poppins:wght@400;500&family=Work+Sans:wght@400;500&display=swap');
 
+/* custom property */
+
+:root{
+    --main-padding: 35px 200px;
+    --heading-size: 30px;
+    --section-margin: 20px 0;
+}
+
 /* header styles  */
 header{
     
@@ -142,4 +150,34 @@ margin-bottom: 10px;
     margin-top: 15px;
 }
 
+/* online game styles */
+
+.online-game-container{
+    padding: var(--main-padding);
+    margin: var(--section-margin) ;
+}
+.online-game-info{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.online-game-info h1{
+    font-size: var(--heading-size);
+    margin-bottom: 10px;
+}
+.online-game-info p{
+    margin-bottom: 20px;
+}
+.online-game-imgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.online-game-imgs img{
+    width: 75%;
+    margin-bottom: 10px;
+}
+.online-game-img p{
+    color: #534C64;
+font-size: 15px;
+font-weight: 500;
+}
 
