@@ -17,6 +17,18 @@ font-family: 'Work Sans', sans-serif;
     --section-margin: 20px 0;
 }
 
+/* common styles */
+
+.text-gradient{
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* header styles  */
 header{
     
@@ -79,10 +91,6 @@ text-transform: uppercase;
     font-size: 50px;
     margin: 20px 0;
     font-weight: 800;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .banner-icons p{
     margin-bottom: 10px;
@@ -132,15 +140,7 @@ text-transform: uppercase;
 .gamer-info{
     text-align: right;
 }
-.gamer-info h1{
-    font-size: 30px;
-font-weight: 700;
-background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-margin-bottom: 10px;
-}
+
 .gamer-details p{
     color: #534C64;
     font-size: 15px;
@@ -152,7 +152,7 @@ margin-bottom: 10px;
 
 /* online game styles */
 
-.online-game-container{
+.online-game-container, .play-main-container{
     padding: var(--main-padding);
     margin: var(--section-margin) ;
 }
@@ -180,4 +180,32 @@ margin-bottom: 10px;
 font-size: 15px;
 font-weight: 500;
 }
-
+/* play container styles */
+.play-main-container{
+    position: relative;
+}
+.play-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    gap: 50px;
+}
+.play-info h1{
+    font-size: var(--heading-size);
+    margin-bottom: 15px;
+}
+.play-container .play-img img{
+    height: 50%;
+    width: 50%;
+}
+.rectangle66{
+    width: 10%;
+    height: 40%;
+    position: absolute;
+    bottom: 2%;
+    right: 35%;
+    border-radius: 8px;
+border: 3px solid #FFF;
+background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
+}
