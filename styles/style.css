@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 /* utilities */
@@ -11,7 +11,7 @@ font-family: 'Work Sans', sans-serif;
 
 /* custom property */
 
-:root{
+:root {
     --main-padding: 35px 200px;
     --heading-size: 30px;
     --section-margin: 20px 0;
@@ -19,7 +19,7 @@ font-family: 'Work Sans', sans-serif;
 
 /* common styles */
 
-.text-gradient{
+.text-gradient {
     font-size: 30px;
     margin: 20px 0;
     font-weight: 800;
@@ -30,85 +30,96 @@ font-family: 'Work Sans', sans-serif;
 }
 
 /* header styles  */
-header{
-    
-}
-.nav-container{
+header {}
+
+.nav-container {
     padding: 35px 200px;
     background-color: white;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-between;
 }
-.logo-container{
+
+.logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.nav-items-container{
+
+.nav-items-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
-.nav-items a{
+
+.nav-items a {
     margin-left: 30px;
     text-decoration: none;
     font-size: 18px;
 }
-.social-networks{
+
+.social-networks {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 15px 20px;
-    
+
 }
-.social-networks span{
+
+.social-networks span {
     margin-right: 15px;
 }
+
 /* banner styles */
 
-.banner-container{
+.banner-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #FFF;
     padding: 0 200px;
 }
-.banner-info{
-text-align: left;
-width: 50%;
-background: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+
+.banner-info {
+    text-align: left;
+    width: 50%;
+    background: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
 
 }
-.banner-info h2{
+
+.banner-info h2 {
     color: #0B0223;
-font-size: 30px;
-font-weight: 600;
-text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-.banner-info h1{
+
+.banner-info h1 {
     font-size: 50px;
     margin: 20px 0;
     font-weight: 800;
 }
-.banner-icons p{
+
+.banner-icons p {
     margin-bottom: 10px;
     color: #534C64;
     font-weight: 500;
     font-size: 15px;
 }
- .btn-primary{
+
+.btn-primary {
     font-size: 20px;
     padding: 10px 30px;
     margin-right: 25px;
     color: white;
     border: none;
     border-radius: 40px;
-    background: #f835c4 ;
+    background: #f835c4;
     margin-top: 15px;
 }
-.banner-btn .btn-go{
+
+.banner-btn .btn-go {
     font-size: 20px;
     padding: 10px 30px;
     margin-right: 25px;
@@ -117,16 +128,19 @@ text-transform: uppercase;
     border-radius: 40px;
     background: #4EC5F7;
 }
+
 .banner-img {
     width: 50%;
 }
-.banner-img img{
+
+.banner-img img {
     width: 100%;
     height: 75%;
 }
+
 /* gamer section styles */
 
-.gamer-container{
+.gamer-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,122 +148,202 @@ text-transform: uppercase;
     padding: 0 200px;
     margin-top: 20px;
 }
-.gamer-img img{
+
+.gamer-img img {
     width: 100%;
 }
-.gamer-info{
+
+.gamer-info {
     text-align: right;
 }
 
-.gamer-details p{
+.gamer-details p {
     color: #534C64;
     font-size: 15px;
     font-weight: 400;
 }
-.purpose{
+
+.purpose {
     margin-top: 15px;
 }
 
 /* online game styles */
 
-.online-game-container, .play-main-container, .games-collection-container{
+.online-game-container,
+.play-main-container {
     padding: var(--main-padding);
-    margin: var(--section-margin) ;
+    margin: var(--section-margin);
 }
-.online-game-info{
+
+.online-game-info {
     text-align: center;
     margin-bottom: 15px;
 }
-.online-game-info h1{
+
+.online-game-info h1 {
     font-size: var(--heading-size);
     margin-bottom: 10px;
 }
-.online-game-info p{
+
+.online-game-info p {
     margin-bottom: 20px;
 }
-.online-game-imgs{
+
+.online-game-imgs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.online-game-imgs img{
-    width: 75%;
-    margin-bottom: 10px;
-}
-.online-game-img p{
-    color: #534C64;
-font-size: 15px;
-font-weight: 500;
-}
-/* play container styles */
-.play-main-container{
+
+.online-game-img {
+    width: 100%;
     position: relative;
 }
-.play-container{
+
+.online-game-img:hover .online-game-overlay {
+    position: absolute;
+    width: 75%;
+    height: 83%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: rgba(105, 71, 71, 0.893);
+}
+
+.rect6 .online-game-overlay {
+    position: absolute;
+    width: 75%;
+    height: 83%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(105, 71, 71, 0.893);
+    border-radius: 10px;
+}
+
+.icon {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.online-game-overlay .icon-text {
+    text-align: center;
+    color: rgb(222, 17, 208);
+    position: absolute;
+    top: 60%;
+    left: 38%;
+}
+
+.online-game-img img {
+    width: 75%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.online-game-img p {
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* play container styles */
+
+.play-main-container {
+    position: relative;
+}
+
+.play-container {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: right;
     gap: 50px;
 }
-.play-info h1{
+
+.play-info h1 {
     font-size: var(--heading-size);
     margin-bottom: 15px;
 }
-.play-container .play-img img{
+
+.play-container .play-img img {
     height: 50%;
     width: 50%;
 }
-.rectangle66{
+
+.rectangle66 {
     width: 10%;
     height: 40%;
     position: absolute;
     bottom: 2%;
     right: 35%;
     border-radius: 8px;
-border: 3px solid #FFF;
-background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
+    border: 3px solid #FFF;
+    background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
 }
+
 /* .games-collection-container styles */
 
-.games-collection-container{
+
+.games-collection-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    margin: 50px 180px;
+    gap: 60px;
     flex-wrap: wrap;
 }
-.single-game{
+
+.single-game {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 8px;
 }
-.single-game:hover{
+
+.single-game img {
+    width: 40px;
+    height: 40px;
+}
+
+.single-game:hover {
     border: 2px solid rgb(240, 57, 164);
     border-radius: 50px;
-    padding: 10px 15px;
-  
+    padding: 4px 6px;
 }
-.single-game p{
+
+.single-game:hover p {
+    color: #f835c4;
+}
+
+.single-game p {
     color: #0B0223;
-font-size: 15px;
-font-weight: 600;
+    font-size: 15px;
+    font-weight: 600;
 }
-.arcade-game{
+
+.arcade-game {
     border: 2px solid rgb(240, 57, 164);
     border-radius: 50px;
-    padding: 10px 15px;
+    padding: 5px 10px;
 }
 
 /* footer styles */
 
-.footer-container{
+.footer-container {
     text-align: center;
     background: #0B0223;
     color: white;
     padding: 20px;
+    margin-top: 200px;
 }
 
-.useful-links, .terms-condition, .footer-logo{
+.useful-links,
+.terms-condition,
+.footer-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,19 +351,26 @@ font-weight: 600;
     margin: 20px 0;
     color: white;
 }
-.useful-links li , .terms-condition li {
-   list-style: none;
+
+.useful-links li,
+.terms-condition li {
+    list-style: none;
 }
-.useful-links li a, .terms-condition li a{
-   text-decoration: none;
-   color: white;
+
+.useful-links li a,
+.terms-condition li a {
+    text-decoration: none;
+    color: white;
 }
-.social-media span{
+
+.social-media a {
     font-size: 20px;
     margin-right: 10px;
+    color: white;
 }
-.copyrights{
-    color:burlywood;
-font-size: 12px;
-font-weight: 500;
+
+.copyrights {
+    color: burlywood;
+    font-size: 12px;
+    font-weight: 500;
 }
