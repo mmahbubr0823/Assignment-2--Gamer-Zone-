@@ -40,8 +40,9 @@
         gap: 30px;
     }
 
-    .online-game-overlay {
-        display: none;
+    .rect6 .online-game-overlay{
+       height: 88%;
+       left: 50px;
     }
 
     .play-main-container {
